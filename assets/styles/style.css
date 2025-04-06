@@ -130,3 +130,46 @@ header svg.svg-etc {
     bottom: 3;
     transform: translateX(23em)  translateY(10em);
 }
+
+main {
+    justify-content: center;
+    align-items: center;
+}
+
+section.my-skills {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    max-width: 60%;
+    left: auto;
+    right: auto;
+    top: 90vh;
+    background-color: #E4EFE7;
+    padding: 2em 1em;
+    z-index: 1;
+}
+
+section.my-skills h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+section.my-skills h2::after {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 0;
+    right: 0;
+    bottom: 10px;
+    background-color: #99BC85;
+    transition: width .3s;
+    z-index: -1; 
+}
+
+section.my-skills h2:hover:after {
+    width: 100%;
+    text-shadow: 0 0 10px #99BC85;
+}
