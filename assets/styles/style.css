@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="19" height="48" viewBox="0 0 24 24"><path fill="%23000" d="M4.5.79v22.42l6.56-6.57h9.29L4.5.79z"></path></svg>'), auto;
+}
+
+body {
+    background-color: #fff;
+    position: relative;
+    font-family: poppins, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+audio {
+    display: none;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    box-shadow: 0 4px 1rem 1px #E4EFE7;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+}
+
+nav a {
+    height: 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+nav ul .mobile-home {
+    display: none;
+}
+
+.active {
+    color: #f4f4f4;
+    background: linear-gradient(to top, #99BC85 #9ACBD0);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color : #444;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav ul li i {
+    margin-right: 10px;
+    border-right: solid 2px #444;
+    padding-right: 10px;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+    background: linear-gradient(to top, #99BC85, #9ACBD0);
+}
+
+nav ul li a:active {
+    color: #f4f4f4;
+    background: linear-gradient(to bottom, #99BC85 60%, #9ACBD0);
+    cursor: wait;
+}
+
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #555;
+    background-size: cover;
+    background-position: center;
+    background-color: #9ACBD0;
+    position: relative;
+    gap: 20px;
+}
+
+header img {
+    width: 200px;
+    border-radius: 5%;
+    mask-image: rgba(0, 0, 0, 0.10);
+    filter: blur(1px) brightness(0.8) grayscale(1);
+    transition: 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1);
+    filter: blur(0) brightness(1) grayscale(0);
+}
+
+header h1 span {
+    font-size: 2.2rem;
+    transition: 0.3s ease-in-out;
+}
+
+header h1 span:hover {
+    color: #DDEB9D;
+    font-size: 2.1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+header svg.svg-etc {
+    position: absolute;
+    bottom: 3;
+    transform: translateX(23em)  translateY(10em);
+}

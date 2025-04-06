@@ -1,69 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ihsan | Portfolio</title>
+    <link rel="shortcut icon" href="/assets/img/icon/whysann.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <script src="assets/js/script.js"></script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="shortcut icon" href="/assets/img/icon/whysann.png" type="image/x-icon">
-</head>
-
-<body>
+  <body>
     <audio src="assets/audio/backsound.mp3" loop autoplay controls></audio>
     <nav>
-        <img src="assets/img/icon/Header.png" alt="My Icon">
+        <div hidden class="toggle-navbar" onclick="toggleNavbar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <a href="index.html"><img src="assets/img/icon/Header.png" alt="My Icon" /></a>
         <ul>
-            <span><li><a href="" target="_blank" rel="noopener noreferrer"></a>Home</li></span>
-            <li><a href="about.html" target="_blank" rel="noopener noreferrer"></a>About</li>
-            <li><a href="contact.html" target="_blank" rel="noopener noreferrer"></a>Contact</li>
-            <li><a href="project.html" target="_blank" rel="noopener noreferrer"></a>Projects</li>
+            <li><a class="mobile-home" href="index.html" rel="noopener noreferrer">Home</a></li>
+            <li><a href="about.html" rel="noopener noreferrer"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li><a href="contact.html" rel="noopener noreferrer"><i class="fa-solid fa-circle-user"></i>Contact</a></li>
+            <li><a href="project.html" rel="noopener noreferrer"><i class="fa-solid fa-diagram-project"></i>Projects</a></li>
         </ul>
     </nav>
     <header>
-        <img src="assets/img/icon/mee.jpg" alt="My Profile">
-        <h1>Hi all 👋🏼, I am <span>Maulana Abdul Ihsan</span></h1>
-        <p>God always gives the best at the right time.</p>
+      <img src="assets/img/icon/mee.jpg" alt="My Profile" />
+      <h1>Hi all 👋🏼, I am <span>Maulana Abdul Ihsan</span></h1>
+      <p>God always gives the best at the right time.</p>
+      <!-- svg etc -->
+        
+
+        
+      <!-- End svg etc -->
     </header>
+    <!-- Main Content -->
     <main>
-        <section>
-            <h2>My Skills</h2>
-            <div class="container">
-                <article>
-                    <div class="icon">
-                        <img src="assets/img/icon/html.png" alt="HTML">
-                    </div>
-                    <h3>HTML</h3>
-                    <p>HTML is the standard markup language for creating web pages. It defines the structure of a web page and
-                        the content that appears on it.</p>
-                        <span>learn</span>
-                </article>
-                <article>
-                    <div class="icon">
-                        <img src="assets/img/icon/css.png" alt="CSS">
-                    </div>
-                    <h3>CSS</h3>
-                    <p>CSS is used to style the HTML elements on a web page. It adds color, layout, and graphics to a web
-                        page.</p>
-                        <span>learn</span>
-                </article>
-                <article>
-                    <div class="icon">
-                        <img src="assets/img/icon/js.png" alt="JavaScript">
-                    </div>
-                    <h3>JavaScript</h3>
-                    <p>JavaScript is a programming language used to add interactivity to web pages. It enables users to
-                        create dynamic content and animations.</p>
-                        <span>learn some</span>
-                </article>
+      <section class="my-skills">
+        <h2>My Skills</h2>
+        <div class="container">
+          <article>
+            <div class="icon">
+              <img src="assets/img/icon/html.png" alt="HTML" />
             </div>
-        </section>
-        <!-- Svg -->
+            <h3>HTML</h3>
+            <p>
+              HTML is the standard markup language for creating web pages. It
+              defines the structure of a web page and the content that appears
+              on it.
+            </p>
+            <span>learn</span>
+            <button onclick="ShowDevTools()">Dev Tools</button>
+          </article>
+          <article>
+            <div class="icon">
+              <img src="assets/img/icon/css.png" alt="CSS" />
+            </div>
+            <h3>CSS</h3>
+            <p>
+              CSS is used to style the HTML elements on a web page. It adds
+              color, layout, and graphics to a web page.
+            </p>
+            <span>learn</span>
+            <button onclick="ShowDevTools()">Dev Tools</button>
+          </article>
+          <article>
+            <div class="icon">
+              <img src="assets/img/icon/js.png" alt="JavaScript" />
+            </div>
+            <h3>JavaScript</h3>
+            <p>
+              JavaScript is a programming language used to add interactivity to
+              web pages. It enables users to create dynamic content and
+              animations.
+            </p>
+            <span>learn some</span>
+            <button onclick="ShowDevTools()">Dev Tools</button>
+          </article>
+        </div>
+      </section>
+      <!-- Svg -->
 
-         <!-- End Svg -->
-        <section>
-            <h2>My </h2>
-        </section>
+      <!-- End Svg -->
+      <section class="my-activities">
+        <h2>My Activities</h2>
+        <div class="container">
+          <article>
+            <img src="assets/img/content/coding.jpg" alt="Coding" />
+            <h3>Learn to code</h3>
+            <p>
+              I learn coding to develop myself into a better developer, broaden
+              my horizons, and relieve sadness🙂.
+            </p>
+          </article>
+          <article>
+            <img src="assets/img/content/drawing.jpg" alt="Drawing" />
+            <h3>Draw</h3>
+            <p>
+              I draw because I like my previous work that I drew. I also like to
+              draw for fun.
+            </p>
+          </article>
+          <article>
+            <img src="assets/img/content/games.jpg" alt="Games" />
+            <h3>Playing games</h3>
+            <p>
+              I play games as a form of entertainment when I'm tired or sad. I
+              like to play games like Pointblank, GTA V online/offline/RP, Watch
+              Dogs v1/2, and Clash Of Clans
+            </p>
+            <a href="https://discord.com/">join my discord channel, to play with me</a>
+          </article>
+        </div>
+      </section>
     </main>
-</body>
-
+    <!-- End Main Content -->
+    <!-- Would you like to work together? Please contact me -->
+    <section class="my-information">
+      <div class="box-container">
+        <div class="content-title">
+          <h1>develop or start a project</h1>
+        </div>
+        <div class="content-text">
+          <p>Would you like to work together? Please contact me.</p>
+        </div>
+        <div class="content-button">
+          <a href="contact.html" target="_blank" rel="noopener noreferrer">Contact Me</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Made by &copy; 2025 Ihsan. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
