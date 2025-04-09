@@ -46,6 +46,10 @@ body {
   transform: translateY(-8px) scale(1.02);
 } */
 
+body svg {
+  z-index: 1;
+}
+
 audio {
   display: none;
 }
@@ -174,7 +178,7 @@ header img {
   width: 200px;
   border-radius: 5%;
   mask-image: rgba(0, 0, 0, 0.10);
-  filter: blur(1px) brightness(0.8) grayscale(1) url();
+  filter: blur(1px) brightness(0.8) grayscale(1);
   transition: 0.3s ease-in-out;
 }
 
@@ -225,21 +229,10 @@ header p {
   position: absolute;
 }
 
-main {
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  height: 150vh;
+section.container-skills {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  background-color: #4C585B;
-  /* background-image: url('../img/content/bg-main.svg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  top: -300px;
-  box-shadow: 0 -1000px 25px rgba(232, 249, 255, 1);
+  align-items: center;
 }
 
 section.my-skills {
@@ -251,19 +244,16 @@ section.my-skills {
   align-items: center;
   place-items: center;
   max-width: 1200px;
-  top: 100vh;
-  background-color: #A3D1C6;
+  background-color: #adafb6;
   padding: 20px;
   z-index: 1;
   border-radius: 10px;
   transition: 0.5s;
-  overflow: hidden;
-  text-transform: uppercase;
 }
 
 section.my-skills:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 4px 1rem 1px #9ACBD0;
+  box-shadow: 0 4px 1rem 1px #adafb6;
 }
 
 section.my-skills h2 {
@@ -272,6 +262,7 @@ section.my-skills h2 {
   text-shadow: 0 0 10px #a4a4a4;
   text-align: center;
   position: relative;
+  text-transform: uppercase;
 }
 
 section.my-skills h2::after {
@@ -281,7 +272,7 @@ section.my-skills h2::after {
   width: 0;
   right: 0;
   bottom: 10px;
-  background-color: #99BC85;
+  background-color: #5c636b;
   transition: width .3s;
   z-index: -1; 
 }
@@ -395,12 +386,69 @@ section.my-skills .container article .pushinkk button:hover:active {
   background: radial-gradient(circle, #9baff8);
 }
 
+.wev-background {
+  width: 100%;
+  height: 910px;
+  background-image: url('../img/content/star2.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  top: 160vh;
+}
+
+.wev-background2 {
+  width: 100%;
+  height: 900px;
+  background-image: url('../img/content/star.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  top: 190vh;
+}
+
+.wev-cross-main {
+  background-image: url('../img/content/wev-cros-main.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 250vh;
+  background-color: none;
+  position: absolute;
+  top: 190vh;
+  rotate: 150deg;
+  translate: -200px 200px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: max-content;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #4C585B;
+  /* background-image: url('../img/content/bg-main.svg'); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 section.my-activities {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20vh;
+  height: max-content;
+  translate: 0 80vh;
+  z-index: 1;
 }
 
 section.my-activities h2 {
@@ -411,6 +459,7 @@ section.my-activities h2 {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
+  font-family: "Just Another Hand", cursive;
 }
 
 
@@ -418,3 +467,97 @@ section.my-activities h2:hover {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
+section.my-activities .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1400px;
+  height: 200vh;
+}
+
+section.my-activities .container article {
+  display: flex;
+  gap: 20px;
+}
+
+.var-coding {
+  left: 1150px;
+  width: 400px;
+  height: 225px;
+  font-family: "Just Another Hand", cursive;
+  translate: 320px 15px;
+  border-right: #202020 solid 4px;
+  padding: 0 5vh 0 0;
+}
+
+.var-coding h3 {
+  text-align: start;
+  font-size: 2.5rem;
+}
+
+.var-coding p {
+  font-size: 1.5rem;  
+}
+
+.var-draw {
+  left: 1150px;
+  width: 400px;
+  height: 225px;
+  font-family: "Just Another Hand", cursive;
+  translate: 320px 15px;
+  border-right: #202020 solid 4px;
+  padding: 0 5vh 0 0;
+}
+
+.var-draw h3 {
+  text-align: start;
+  font-size: 2.5rem;
+}
+
+.var-draw p {
+  font-size: 1.5rem;  
+}
+
+section.my-activities .container article .img-coding {
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+  translate: 150px;
+  transition: .4s ease-in-out;
+}
+
+section.my-activities .container article .img-coding:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.25);
+}
+
+section.my-activities .container article .img-coding img {
+  object-position: 0 -1.9em;
+  transition: .4s ease-in-out;
+  filter: blur(1px) brightness(0.5);
+  transform: scale(1.08);
+}
+
+section.my-activities .container article .img-coding img:hover {
+  transform: scale(1.19) rotate(5deg);
+}
+
+
+
+
+
+section.my-information {
+  display: flex;
+  height: 100vh;
+
+}
+
+/* kombinasi warna by jon:
+2 warna yang nyambung :
+  1.adafb6
+  2.5c636b
+4 warna yang nyambung :
+  1.6a7d8a
+  2.2f4a52
+  3.172e35
+  4.101e23 */
