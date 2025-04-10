@@ -9,11 +9,7 @@ html {
 }
 
 body {
-  background-color: #fff;
-  position: relative;
   font-family: poppins, sans-serif;
-  background-size: cover;
-  background-position: center;
   overflow-x: hidden;
 }
 
@@ -56,14 +52,14 @@ audio {
 
 /* Navigation Bar */
 nav {
-  background-color: #fff;
+  background-color: #adafb6;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
   z-index: 2;
   top: 0;
-  box-shadow: 0 4px 1rem 1px #E4EFE7;
+  box-shadow: 0 4px 1rem 1px #adafb6;
   text-transform: uppercase;
   transition: 1s;
   text-align: center;
@@ -87,7 +83,7 @@ nav ul .mobile-home {
 
 .active {
   color: #f4f4f4;
-  background: linear-gradient(to top, #99BC85 #9ACBD0);
+  background: linear-gradient(to top, #adafb6 #5c636b);
 }
 
 nav ul li a {
@@ -108,12 +104,12 @@ nav ul li i {
 
 nav ul li a:hover {
   color: #f4f4f4;
-  background: linear-gradient(to top, #99BC85, #9ACBD0);
+  background: linear-gradient(to top, #6a7d8a, #5c636b);
 }
 
 nav ul li a:active {
   color: #f4f4f4;
-  background: linear-gradient(to bottom, #99BC85 60%, #9ACBD0);
+  background: linear-gradient(to bottom, #5c636b 60%, #6a7d8a);
   cursor: wait;
 }
 
@@ -270,7 +266,7 @@ section.my-skills h2::after {
   position: absolute;
   height: 5px;
   width: 0;
-  right: 0;
+  left: 0;
   bottom: 10px;
   background-color: #5c636b;
   transition: width .3s;
@@ -279,7 +275,7 @@ section.my-skills h2::after {
 
 section.my-skills h2:hover:after {
   width: 100%;
-  text-shadow: 0 0 10px #99BC85;
+  text-shadow: 0 0 10px #a4a4a4;
 }
 
 section.my-skills .container {
@@ -295,7 +291,7 @@ section.my-skills .container article {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
   justify-content: space-around;
-  background-color: #2ea0ec;
+  background-color: #5c636b;
 }
 
 .lebarinbtn {
@@ -324,7 +320,7 @@ section.my-skills .container article .lebarinbtn .content-ticle p {
 }
 
 section.my-skills .container article .lebarinbtn .content-ticle span {
-  color: #4b91c0;
+  color: #101e23;
   border: solid 3px;
   border-radius: 50px;
   width: 110px;
@@ -335,9 +331,9 @@ section.my-skills .container article .lebarinbtn .content-ticle span {
 }
 
 section.my-skills .container article .lebarinbtn .content-ticle span:hover {
-  background-color: #4b91c0;
+  background-color: #6a7d8a;
   color: #dbdbdb;
-  border: solid 3px #4b91c0;
+  border: solid 3px #6a7d8a;
 }
 
 section.my-skills .container article .lebarinbtn .content-ticle h3 {
@@ -354,7 +350,7 @@ section.my-skills .container article .lebarinbtn .content-ticle h3::after {
   margin-left: 5px;
   justify-content: center;
   align-items: center;
-  background-color: #99BC85;
+  background-color: #2f4a52;
   transition: .3s ease-in-out;
 }
 
@@ -370,8 +366,8 @@ section.my-skills .container article .pushinkk {
 
 section.my-skills .container article .pushinkk button {
   border: solid 2px #202020;
-  background-color: #AAB99A;
-  color: #032b17;
+  background-color: #6a7d8a;
+  color: #eaeaea;
   padding: 5px;
   border-radius: 7px;
   transition: 0.3s ease-in-out;
@@ -379,35 +375,35 @@ section.my-skills .container article .pushinkk button {
 }
 
 section.my-skills .container article .pushinkk button:hover {
-  background-color: #4b91c0;
+  background-color: #101e23;
 }
 
 section.my-skills .container article .pushinkk button:hover:active {
-  background: radial-gradient(circle, #9baff8);
+  background: linear-gradient(to bottom, #101e23 60%, #6a7d8a 80%);
 }
 
 .wev-background {
   width: 100%;
-  height: 910px;
-  background-image: url('../img/content/star2.svg');
+  height: 120vh;
+  background-image: url('../img/content/polygon2.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   z-index: 0;
-  top: 160vh;
+  top: 350vh;
 }
 
 .wev-background2 {
   width: 100%;
-  height: 900px;
-  background-image: url('../img/content/star.svg');
+  height: 150vh;
+  background-image: url('../img/content/polygon.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
   z-index: 0;
-  top: 190vh;
+  top: 200vh;
 }
 
 .wev-cross-main {
@@ -425,18 +421,10 @@ section.my-skills .container article .pushinkk button:hover:active {
 }
 
 main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: justify;
-  height: max-content;
-  flex-direction: column;
   gap: 20px;
-  background-color: #4C585B;
+  background-color: #6a7d8a;
   /* background-image: url('../img/content/bg-main.svg'); */
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 350vh;
 }
 
 
@@ -446,9 +434,7 @@ section.my-activities {
   justify-content: center;
   align-items: center;
   gap: 20vh;
-  height: max-content;
-  translate: 0 80vh;
-  z-index: 1;
+  translate: 0 73vh;
 }
 
 section.my-activities h2 {
@@ -478,6 +464,7 @@ section.my-activities .container {
 section.my-activities .container article {
   display: flex;
   gap: 20px;
+  flex: 1;
 }
 
 .var-coding {
@@ -485,7 +472,7 @@ section.my-activities .container article {
   width: 400px;
   height: 225px;
   font-family: "Just Another Hand", cursive;
-  translate: 320px 15px;
+  translate: 200px 30px;
   border-right: #202020 solid 4px;
   padding: 0 5vh 0 0;
 }
@@ -502,11 +489,11 @@ section.my-activities .container article {
 .var-draw {
   left: 1150px;
   width: 400px;
-  height: 225px;
+  height: 180px;
   font-family: "Just Another Hand", cursive;
-  translate: 320px 15px;
-  border-right: #202020 solid 4px;
-  padding: 0 5vh 0 0;
+  translate: 0 9vh;
+  border-left: #202020 solid 4px;
+  padding: 0 0 0 5vh;
 }
 
 .var-draw h3 {
@@ -518,12 +505,55 @@ section.my-activities .container article {
   font-size: 1.5rem;  
 }
 
+.var-games {
+  left: 1150px;
+  width: 400px;
+  height: 350px;
+  font-family: "Just Another Hand", cursive;
+  translate: 0 45vh;
+  border-right: #202020 solid 4px;
+  padding: 0 5vh 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: 20px;
+}
+
+.var-games h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.var-games p {
+  font-size: 1.5rem;  
+}
+
+.var-games a {
+  text-decoration: none;
+  background-color: #7289DA;
+  color: #eaeaea;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: .2s ease-in-out;
+  user-select: none;
+}
+
+.var-games a:hover {
+  background-color: #879ce9;
+}
+
+.var-games a:active {
+  background-color: #6177c7;
+  color: #a4a4a4;
+}
+
 section.my-activities .container article .img-coding {
   overflow: hidden;
   width: 500px;
   height: 300px;
   border-radius: 25px;
-  translate: 150px;
+  translate: 0;
   transition: .4s ease-in-out;
 }
 
@@ -532,7 +562,7 @@ section.my-activities .container article .img-coding:hover {
 }
 
 section.my-activities .container article .img-coding img {
-  object-position: 0 -1.9em;
+  object-position: 0 -2.9em;
   transition: .4s ease-in-out;
   filter: blur(1px) brightness(0.5);
   transform: scale(1.08);
@@ -542,17 +572,153 @@ section.my-activities .container article .img-coding img:hover {
   transform: scale(1.19) rotate(5deg);
 }
 
+section.my-activities .container article .img-draw {
+  overflow: hidden;
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+  translate: 240px;
+  transition: .4s ease-in-out;
+  order: 1;
+}
 
+section.my-activities .container article .img-draw:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.25);
+}
 
+section.my-activities .container article .img-draw img {
+  object-position: 0 -2.9em;
+  transition: .4s ease-in-out;
+  filter: blur(1px) brightness(0.5);
+  transform: scale(1.08);
+}
 
+section.my-activities .container article .img-draw img:hover {
+  transform: scale(1.19) rotate(5deg);
+}
+
+section.my-activities .container article .img-games {
+  width: 500px;
+  height: 300px;
+  border-radius: 25px;
+  translate: 100px 65px;
+  transition: .4s ease-in-out;
+  overflow: hidden;
+}
+
+section.my-activities .container article .img-games:hover {
+  box-shadow: 0 0 15px 3px rgba(255, 255, 255, 0.25);
+}
+
+section.my-activities .container article .img-games img {
+  object-position: 0 -1.9em;
+  transition: .4s ease-in-out;
+  filter: blur(1px) brightness(0.5);
+  transform: scale(1.08);
+  width: 600px;
+}
+
+section.my-activities .container article .img-games img:hover {
+  transform: scale(1.19) rotate(2deg);
+}
 
 section.my-information {
   display: flex;
-  height: 100vh;
-
+  justify-content: center;
 }
 
-/* kombinasi warna by jon:
+section.my-information section.my-information-panel {
+  position: absolute;
+  justify-content: center;
+  max-width: 1400px;
+  translate: 0 -7vh;
+  background-color: #101e23;
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  color: #eaeaea;
+  z-index: 1;
+}
+
+section.my-information .box-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10vh;
+  flex: 1;
+}
+
+section.my-information .box-container .content-title {
+  display: flex;
+  align-items: center;
+  gap:2vh;
+  font-size: 1.5rem;
+  background-color: #2f4a52;
+  padding: 3px 9px;
+  border-radius: 10px;
+  width: 31%;
+  transition: .2s ease-in-out;
+  color: #eaeaea;
+}
+
+section.my-information .box-container .content-title:hover {
+  background-color: #5c636b;
+  color: #fff;
+}
+
+section.my-information .box-container .content-text {
+  font-size: 1.2rem;
+}
+
+section.my-information .box-container .content-button a {
+  display: flex;
+  align-items: center;
+  border: #5c636b solid 2px;
+  gap: 10px;
+  padding: 2px 7px;
+  cursor: pointer;
+  color: #5c636b;
+  transition: .2s ease-in-out;
+  text-decoration: none;
+  color: #5c636b;
+  transition: .2s ease-in-out;
+  user-select: none;
+}
+
+section.my-information .box-container .content-button a:hover {
+  background-color: #5c636b;
+  color: #eaeaea;
+}
+
+.bg-footer {
+  width: 100%;
+  height: 20vh;
+  background-image: url('../img/content/bg-footer.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.bg-footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.69);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 3vh;
+  background-color: #adafb6;
+}
+
+
+/* kombinasi warna by josyy:
 2 warna yang nyambung :
   1.adafb6
   2.5c636b
