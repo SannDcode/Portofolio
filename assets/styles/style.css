@@ -197,6 +197,7 @@ header h1 span:hover {
 header p {
   font-size: 1.2rem;
   font-weight: 300;
+  user-select: none;
 }
 
 /* header svg.svg-etc {
@@ -716,6 +717,71 @@ footer {
   padding: 3vh;
   background-color: #adafb6;
 }
+
+
+/* Responsive */
+@media screen and (max-width: 1599px) {
+  header {
+    background-position-y: -60px;
+  }
+  .flex-svg-header {
+    translate: 0 -120vh;
+  }
+  .top-svg-header {
+    translate: 0 10vh;
+  }
+
+  section.container-skills {
+    translate: 0 -10vh;
+  }
+  section.my-activities {
+    gap: 10vh;
+    translate: 0 55vh;
+  }
+  section.my-activities .container article .img-coding {
+    translate: -10vh 0;
+  }
+  section.my-activities .container article .var-coding {
+    translate: 1vh 0;
+  }
+  section.my-activities .container article .img-draw {
+    translate: 10vh -10vh;
+  }
+  section.my-activities .container article .var-draw {
+    translate: 1vh 0;
+  }
+  section.my-activities .container article .img-games {
+    translate: 10vh -5vh;
+  }
+  section.my-activities .container article .var-games {
+    translate: 10vh -3vh;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  nav {
+    position: fixed;
+  }
+  header {
+    background-position-y: -70px;
+  }
+  .flex-svg-header {
+    position: sticky;
+    translate: 0 -120vh;
+  }
+  .top-svg-header {
+    translate: 0 10vh;
+  }
+
+
+}
+
+
+
+
+
+
 
 
 /* kombinasi warna by josyy:
