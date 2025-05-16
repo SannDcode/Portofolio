@@ -6,6 +6,7 @@
 
 html {
   cursor: url('https://img.icons8.com/?size=23&id=52119&format=png&color=000000'), auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,6 +14,16 @@ body {
   overflow-x: hidden;
 }
 
+section.all-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+section.container {
+  justify-content: center;
+  align-items: center;
+}
 /* #scrollTopsan {
   position: fixed;
   bottom: 1rem;
@@ -108,12 +119,12 @@ nav ul li i {
 
 nav ul li a:hover {
   color: #f4f4f4;
-  background: linear-gradient(to top, #6a7d8a, #5c636b);
+  background-color: #6a7d8a;
 }
 
 nav ul li a:active {
   color: #f4f4f4;
-  background: linear-gradient(to bottom, #5c636b 60%, #6a7d8a);
+  background-color: #5c636b;
   cursor: wait;
 }
 
@@ -158,6 +169,7 @@ header {
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  z-index: 0;
 }
 
 .boxxx {
@@ -185,6 +197,7 @@ header img {
   mask-image: rgba(0, 0, 0, 0.10);
   filter: blur(1px) brightness(0.8) grayscale(1);
   transition: 0.3s ease-in-out;
+  z-index: 1;
 }
 
 header img:hover {
@@ -384,6 +397,7 @@ section.my-skills .container article .pushinkk button {
   border-radius: 7px;
   transition: 0.3s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 section.my-skills .container article .pushinkk button:hover {
@@ -403,7 +417,7 @@ section.my-skills .container article .pushinkk button:hover:active {
   background-repeat: no-repeat;
   position: absolute;
   z-index: 0;
-  top: 350vh;
+  top: 300dvh;
 }
 
 .wev-background2 {
@@ -415,7 +429,7 @@ section.my-skills .container article .pushinkk button:hover:active {
   background-repeat: no-repeat;
   position: absolute;
   z-index: 0;
-  top: 200vh;
+  top: 150dvh;
 }
 
 .wev-cross-main {
@@ -436,7 +450,7 @@ main {
   gap: 20px;
   background-color: #6a7d8a;
   /* background-image: url('../img/content/bg-main.svg'); */
-  height: 350vh;
+  height: 300dvh;
 }
 
 
@@ -445,8 +459,19 @@ section.my-activities {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20vh;
-  translate: 0 73vh;
+  translate: 0 55vh;
+}
+
+.arrow-svg {
+  translate: -2dvh -133dvh;
+}
+
+.arrow-svg .hidden-arrow820 {
+  translate: -15dvh -5dvh;
+}
+
+.center-arrow {
+  translate: -5dvh 0;
 }
 
 section.my-activities h2 {
@@ -457,7 +482,7 @@ section.my-activities h2 {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   transition: 0.3s ease-in-out;
   text-transform: uppercase;
-  font-family: "Just Another Hand", cursive;
+  font-family: "Poppins", cursive;
 }
 
 
@@ -469,13 +494,15 @@ section.my-activities .container {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 1400px;
   height: 200vh;
 }
 
 section.my-activities .container article {
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50dvh;
   flex: 1;
 }
 
@@ -484,9 +511,10 @@ section.my-activities .container article {
   width: 400px;
   height: 225px;
   font-family: "Just Another Hand", cursive;
-  translate: 200px 30px;
   border-right: #202020 solid 4px;
   padding: 0 5vh 0 0;
+  text-align: justify;
+  background: linear-gradient(to right, #5c636b00, #adafb6);
 }
 
 .var-coding h3 {
@@ -503,9 +531,9 @@ section.my-activities .container article {
   width: 400px;
   height: 180px;
   font-family: "Just Another Hand", cursive;
-  translate: 0 9vh;
   border-left: #202020 solid 4px;
   padding: 0 0 0 5vh;
+  background: linear-gradient(to left, #5c636b00, #adafb6);
 }
 
 .var-draw h3 {
@@ -522,13 +550,13 @@ section.my-activities .container article {
   width: 400px;
   height: 350px;
   font-family: "Just Another Hand", cursive;
-  translate: 0 45vh;
   border-right: #202020 solid 4px;
   padding: 0 5vh 0 0;
   display: flex;
   flex-direction: column;
   text-align: justify;
   gap: 20px;
+  background: linear-gradient(to right, #5c636b00, #adafb6);
 }
 
 .var-games h3 {
@@ -542,13 +570,14 @@ section.my-activities .container article {
 
 .var-games a {
   text-decoration: none;
-  background-color: #7289DA;
+  background-color: #5662f6;
   color: #eaeaea;
-  padding: 5px 10px;
+  padding: 5px;
   text-transform: capitalize;
   border-radius: 5px;
   transition: .2s ease-in-out;
   user-select: none;
+  text-align: center;
 }
 
 .var-games a:hover {
@@ -565,7 +594,6 @@ section.my-activities .container article .img-coding {
   width: 500px;
   height: 300px;
   border-radius: 25px;
-  translate: 0;
   transition: .4s ease-in-out;
 }
 
@@ -589,7 +617,6 @@ section.my-activities .container article .img-draw {
   width: 500px;
   height: 300px;
   border-radius: 25px;
-  translate: 240px;
   transition: .4s ease-in-out;
   order: 1;
 }
@@ -613,7 +640,6 @@ section.my-activities .container article .img-games {
   width: 500px;
   height: 300px;
   border-radius: 25px;
-  translate: 100px 65px;
   transition: .4s ease-in-out;
   overflow: hidden;
 }
@@ -643,7 +669,7 @@ section.my-information section.my-information-panel {
   position: absolute;
   justify-content: center;
   max-width: 1400px;
-  translate: 0 -7vh;
+  translate: 0 -7dvh;
   background-color: #101e23;
   flex: 1;
   padding: 20px;
@@ -654,6 +680,7 @@ section.my-information section.my-information-panel {
 
 section.my-information .box-container {
   display: flex;
+  height: 10dvh;
   justify-content: space-around;
   align-items: center;
   gap: 10vh;
@@ -666,11 +693,12 @@ section.my-information .box-container .content-title {
   gap:2vh;
   font-size: 1.5rem;
   background-color: #2f4a52;
-  padding: 3px 9px;
   border-radius: 10px;
   width: 31%;
+  height: 6dvh;
   transition: .2s ease-in-out;
   color: #eaeaea;
+  cursor: pointer;
 }
 
 section.my-information .box-container .content-title:hover {
@@ -680,6 +708,10 @@ section.my-information .box-container .content-title:hover {
 
 section.my-information .box-container .content-text {
   font-size: 1.2rem;
+}
+
+.content-title-arrow {
+  padding: 2dvh;
 }
 
 section.my-information .box-container .content-button a {
@@ -695,6 +727,7 @@ section.my-information .box-container .content-button a {
   color: #5c636b;
   transition: .2s ease-in-out;
   user-select: none;
+  width: 15vh;
 }
 
 section.my-information .box-container .content-button a:hover {
@@ -708,7 +741,7 @@ span.material-symbols-outlined {
 
 .bg-footer {
   width: 100%;
-  height: 20vh;
+  height: 100dvh;
   background-image: url('../img/content/bg-footer.png');
   background-position: center;
   background-size: cover;
@@ -731,8 +764,6 @@ footer {
   background-color: #adafb6;
   width: 100%;
   text-align: center;
-  bottom: 0;
-  position: relative;
 }
 
 /* Arrow */
@@ -742,7 +773,10 @@ footer {
 
 
 /* Responsive */
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1559px) {
+  .all-container {
+    width: 100dvh;
+  }
   header {
     background-position-y: -60px;
   }
@@ -759,30 +793,22 @@ footer {
     translate: 0 -10vh;
   }
   section.my-activities {
-    gap: 10vh;
-    translate: 0 55vh;
+    gap: 5dvh;
+    justify-content: center;
+    align-items: center;
   }
-  section.my-activities .container article .img-coding {
-    translate: -10vh 0;
+  section.my-activities .container {
+    gap: 0;
   }
-  section.my-activities .container article .var-coding {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-draw {
-    translate: 10vh -10vh;
-  }
-  section.my-activities .container article .var-draw {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-games {
-    translate: 10vh -5vh;
+  section.my-activities .container article {
+    align-items: center;
+    justify-content: center;
   }
   section.my-activities .container article .var-games {
-    translate: 10vh -5vh;
     font-size: .8rem;
   }
   .arrow-svg {
-    translate: -29vh -152vh;
+    translate: -10dvh -130vh;
   }
   .bg-footer {
     height: 70vh;
@@ -796,11 +822,14 @@ footer {
 }
 
 @media screen and (max-width: 1400px) {
+  .all-container {
+    width: 100dvh;
+  }
   header {
     background-position-y: 5vh;
   }
   .flex-svg-header {
-    translate: 0 -120vh;
+    translate: 0 -118vh;
   }
   .top-svg-header {
     translate: 0 13vh;
@@ -811,31 +840,14 @@ footer {
   section.container-skills {
     translate: 0 -10vh;
   }
-  section.my-activities {
-    gap: 10vh;
-    translate: 0 55vh;
-  }
-  section.my-activities .container article .img-coding {
-    translate: -10vh 0;
-  }
-  section.my-activities .container article .var-coding {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-draw {
-    translate: 10vh -5vh;
-  }
-  section.my-activities .container article .var-draw {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-games {
-    translate: 10vh 5vh;
+  section.my-activities .container article {
+    gap: 10dvh;
   }
   section.my-activities .container article .var-games {
-    translate: 10vh 3vh;
     font-size: .8rem;
   }
   .arrow-svg {
-    translate: -35vh -149vh;
+    translate: -35vh -135vh;
   }
   .center-arrow {
     translate: 0 2vh;
@@ -845,6 +857,52 @@ footer {
   }
   .hidden-arrow {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flex-svg-header {
+    translate: 0 -118dvh;
+  }
+  .top-svg-header {
+    translate: 0 12dvh;
+  }
+  section.my-skills {
+    max-width: 85%;
+  }
+  main { 
+    height: 300dvh;
+  }
+  section.my-information-panel {
+    translate: 0 -7dvh;
+    width: 85%;
+    left: auto;
+    right: auto;
+  }
+  section.my-information-panel .box-container {
+    height: 25dvh;
+    align-items: center;
+    text-align: justify;
+  }
+  section.my-information-panel .box-container .content-title {
+    height: fit-content;
+    gap: 10px;
+    padding: 10px;
+  }
+  .bg-footer {
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .arrow-svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .top-svg-header {
+    translate: 0 24dvh;
   }
 }
 
@@ -909,7 +967,7 @@ footer {
     translate: 0 29vh;
   }
   main {
-    height: 250vh;
+    height: 180dvh;
   }
   section.container-skills {
     translate: 0 -15vh;
@@ -925,8 +983,12 @@ footer {
     padding: 5px;
   }
   section.my-activities {
-    gap: 10vh;
-    translate: 0 55vh;
+    gap: 2dvh;
+    
+  }
+  section.my-activities .container {
+    height: 5dvh;
+    gap: 4dvh;
   }
   .block-arrow {
     display: flex;
@@ -935,42 +997,182 @@ footer {
     display: none;
   }
   section.my-activities .container article .img-coding {
-    translate: 0;
     width: 20vh;
   }
   section.my-activities .container article .var-coding {
-    translate: 2vh 2vh;
     padding-right: 2vh;
   }
   section.my-activities .container article .img-draw {
-    translate: 2vh -5vh;
     width: 20vh;
   }
-  section.my-activities .container article .var-draw {
-    translate: 2vh 0;
-  }
-  .center-arrow {
-    translate: -20vh -5vh;
-  }
   section.my-activities .container article .img-games {
-    translate: 5vh -7vh;
     width: 20vh;
   }
   section.my-activities .container article .var-games {
-    translate: 5vh -8vh;
     font-size: .8rem;
     padding : 0 3vh 0 0;
   }
   section.my-information section.my-information-panel {
-    max-width: 85%;
-    max-height: 15%;
+    translate: 0 -9dvh;
+    gap: 0;
+    width: 55dvh;
+  }
+  section.my-information section.my-information-panel .box-container {
+    gap: 0;
+    height: 15dvh;
+    width: 100%;
+    flex-wrap: wrap;
   }
   section.my-information section.my-information-panel .box-container .content-title {
+    height: 5dvh;
     font-size: 1rem;
+  }
+  section.my-information section.my-information-panel .box-container .content-title h1 {
+    max-width: 10dvh;
+  }
+  section.my-information section.my-information-panel .box-container .content-title .content-title-arrow {
+    padding: 0;
+  }
+  section.my-information section.my-information-panel .box-container .content-button a {
+    width: fit-content;
+    text-align: center;
+  }
+  .bg-footer {
+    height: 20dvh;
   }
 }
 
 @media screen and (max-width: 466px) {
+  nav {
+    padding: 5px;
+  }
+  nav a {
+    height: 8dvh;
+  }
+  nav a img {
+    width: 25dvh;
+    height: auto;
+  }
+  header {
+    max-width: 100%;
+    max-height: fit-content;
+    flex-wrap: wrap;
+  }
+  header h1 {
+    max-width: 70%;
+  }
+  .flex-svg-header {
+    translate: 0 -120vh;
+  }
+  .top-svg-header {
+    translate: 0 32vh;
+  }
+  .arrow-svg {
+    display: none;
+  }
+  .wev-background2 {
+    translate: 0 40dvh;
+  }
+  section.container-skills {
+    max-height: 60%;
+    font-size: 1.5dvh;
+  }
+  section.my-skills {
+    width: 75%;
+  }
+  main {
+    width: 100%;
+  }
+  section.my-activities h2 {
+    font-size: 4dvh;
+  }
+  section.my-activities .container {
+    max-width: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+  section.my-activities .container article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50dvh;
+  }
+  section.my-activities .container article .img-coding {
+    width: 70%;
+    margin: 10dvh 0 0 0;
+  }
+  section.my-activities .container article .var-coding {
+    width: 60%;
+    height: 80dvh;
+    padding-right: 2dvh;
+    padding: 0 0 30vh 0;
+    margin: 0 0 10dvh 0;
+    border-bottom: #101e23 solid 3px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+  }
+  section.my-activities .container article .var-coding h3 {
+    font-size: 2.5dvh;
+  }
+  section.my-activities .container article .var-coding p {
+    padding: 2dvh;
+  }
+  section.my-activities .container article .img-draw {
+    order: 0;
+    width: 50%;
+  }
+  section.my-activities .container article .var-draw {
+    align-items: center;
+    justify-content: center;
+  }
+  section.my-activities .container article .var-draw h3 {
+    font-size: 3dvh;
+  }
+  section.my-activities .container article .var-draw p {
+    font-size: 2.5dvh;
+  }
+  section.my-activities .container article .img-games {
+    margin: 10dvh 0 0 0;
+    width: 50%;
+  }
+  section.my-activities .container article .var-games {
+    translate: 0;
+    justify-content: center;
+    align-items: center;
+    border-right: none;
+    border-bottom: #101e23 solid 3px;
+    padding: 10px;
+    width: 70%;
+  }
+  section.my-activities .container article .var-games h3 {
+    font-size: 3dvh;
+
+  }
+  section.my-activities .container article .var-games p {
+    font-size: 2.5dvh;
+
+  }
+  section.my-information {
+    translate: 0 3dvh;
+  }
+  section.my-information section.my-information-panel {
+    max-height: fit-content;
+    max-width: 80%;
+  }
+  section.my-information section.my-information-panel .box-container {
+    max-width: 8%;
+    flex-direction: column;
+    flex: 0;
+    gap: 2vh;
+  }
+  section.my-information section.my-information-panel .box-container .content-title {
+    height: 8vh;
+    width: 1px;
+  }
+}
+
+@media screen and (max-width: 480px) {
   .flex-svg-header {
     translate: 0 -120vh;
   }
@@ -981,10 +1183,14 @@ footer {
     display: none;
   }
   main {
-    height: 353vh;
+    height: 400vh;
+  }
+  section.my-skills {
+    max-width: 90%;
+    translate: 0 10vh;
   }
   section.my-activities {
-    translate: 0 115vh;
+    translate: 0 105vh;
   }
   section.my-activities .container {
     max-width: 50vh;
@@ -1029,94 +1235,19 @@ footer {
     padding: 0;
   }
   section.my-information section.my-information-panel {
-    max-height: fit-content;
-    translate: 0 -13vh;
+    min-height: 27vh;
+    translate: 0 -19vh;
   }
   section.my-information section.my-information-panel .box-container {
-    flex-direction: column;
+    flex-direction: row;
     flex: 0;
     gap: 2vh;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
   section.my-information section.my-information-panel .box-container .content-title {
-    height: 8vh;
-    width: 25vh;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .flex-svg-header {
-    translate: 0 -120vh;
-  }
-  .top-svg-header {
-    translate: 0 33vh;
-  }
-  .arrow-svg {
-    display: none;
-  }
-    main {
-    height: 353vh;
-  }
-  section.my-skills {
-    max-width: 90%;
-    translate: 0 10vh;
-  }
-  section.my-activities {
-    translate: 0 105vh;
-  }
-    section.my-activities .container {
-    max-width: 50vh;
-  }
-  section.my-activities .container article {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  section.my-activities .container article .img-coding {
+    height: 8dvh;
     width: 50%;
-  }
-  section.my-activities .container article .var-coding {
-    padding-right: 0;
-    height: 23vh;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    translate: 0;
-  }
-  section.my-activities .container article .img-draw {
-    translate: 0;
-    order: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-draw {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-games {
-    translate: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-games {
-    font-size: .7rem;
-    translate: 0;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    padding: 0;
-  }
-    section.my-information section.my-information-panel {
-    max-height: fit-content;
-    translate: 0 -13vh;
-  }
-  section.my-information section.my-information-panel .box-container {
-    flex-direction: column;
-    flex: 0;
-    gap: 2vh;
-  }
-  section.my-information section.my-information-panel .box-container .content-title {
-    height: 8vh;
-    width: 25vh;
   }
 }
 
@@ -1197,6 +1328,25 @@ footer {
   }
 }
 
+
+/* About page */
+section.about-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+
+
+
+
+
+/* End of about page */
 
 
 
