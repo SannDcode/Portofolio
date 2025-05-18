@@ -1265,7 +1265,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 547px) {
+@media screen and (max-width: 76.28mm) {
   .wev-background2, .wev-background {
     display: none;
   }
@@ -1274,9 +1274,6 @@ footer {
   }
   .top-svg-header {
     translate: 0 40dvh;
-  }
-  main {
-    height: 400dvh;
   }
   .var-draw {
     height: fit-content;
