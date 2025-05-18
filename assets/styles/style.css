@@ -1289,7 +1289,7 @@ footer {
     height: fit-content;
   }
   section.my-activities {
-    translate: 0 150dvh;
+    height: 190dvh;
   }
   section.my-activities .container article .var-games {
     height: fit-content;
