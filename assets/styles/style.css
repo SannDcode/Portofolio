@@ -1,3 +1,15 @@
+:root {
+  --abuTerang: #adafb6;
+  --abuTua: #5c636b;
+  --ijoMuda: #6a7d8a;
+  --ijoMuda2: #2f4a52;
+  --ijoTua: #172e35;
+  --ijoTua2: #101e23;
+  --textButton: #FEFEFE;
+  --bgButton: #3a3f4a;
+  --bgButtonHover: #adafb6;
+  --bgArticle: #44616f;
+}
 * {
   padding: 0;
   margin: 0;
@@ -174,7 +186,7 @@ header {
 
 .boxxx {
   width: 100%;
-  padding: 0 25vh;
+  padding: 0 15dvh;
   height: 100px;
   background-color: #fff;
   transition: 0.3s ease-in-out;
@@ -502,23 +514,26 @@ section.my-activities .container article {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 50dvh;
+  gap: 30dvh;
   flex: 1;
 }
 
 .var-coding {
+  display: flex;
+  flex-direction: column;
   left: 1150px;
   width: 400px;
-  height: 225px;
-  font-family: "Just Another Hand", cursive;
+  height: 27dvh;
   border-right: #202020 solid 4px;
-  padding: 0 5vh 0 0;
+  padding: 0 5dvh 0 5dvh;
   text-align: justify;
   background: linear-gradient(to right, #5c636b00, #adafb6);
+  justify-content: space-around;
+  gap: 1dvh;
 }
 
 .var-coding h3 {
-  text-align: start;
+  height: 3dvh;
   font-size: 2.5rem;
 }
 
@@ -530,7 +545,6 @@ section.my-activities .container article {
   left: 1150px;
   width: 400px;
   height: 180px;
-  font-family: "Just Another Hand", cursive;
   border-left: #202020 solid 4px;
   padding: 0 0 0 5vh;
   background: linear-gradient(to left, #5c636b00, #adafb6);
@@ -547,21 +561,22 @@ section.my-activities .container article {
 
 .var-games {
   left: 1150px;
-  width: 400px;
-  height: 350px;
-  font-family: "Just Another Hand", cursive;
-  border-right: #202020 solid 4px;
-  padding: 0 5vh 0 0;
+  width: 48dvh;
+  height: 39dvh;
+  border-right: hsl(0, 0%, 13%) solid 4px;
+  padding: 0 5vh 0 5dvh;
   display: flex;
   flex-direction: column;
   text-align: justify;
-  gap: 20px;
+  justify-content: center;
+  gap: 1dvh;
   background: linear-gradient(to right, #5c636b00, #adafb6);
 }
 
 .var-games h3 {
   text-align: center;
   font-size: 2.5rem;
+  height: 4.5dvh;
 }
 
 .var-games p {
@@ -570,7 +585,7 @@ section.my-activities .container article {
 
 .var-games a {
   text-decoration: none;
-  background-color: #5662f6;
+  background-color: var(--bgButton);
   color: #eaeaea;
   padding: 5px;
   text-transform: capitalize;
@@ -581,11 +596,12 @@ section.my-activities .container article {
 }
 
 .var-games a:hover {
-  background-color: #879ce9;
+  background-color: var(--bgButtonHover);
+  color: var(--ijoTua2);
 }
 
 .var-games a:active {
-  background-color: #6177c7;
+  background-color: var(--textButton);
   color: #a4a4a4;
 }
 
@@ -690,7 +706,7 @@ section.my-information .box-container {
 section.my-information .box-container .content-title {
   display: flex;
   align-items: center;
-  gap:2vh;
+  gap: 0.5vh;
   font-size: 1.5rem;
   background-color: #2f4a52;
   border-radius: 10px;
@@ -717,6 +733,8 @@ section.my-information .box-container .content-text {
 section.my-information .box-container .content-button a {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 5dvh;
   border: #5c636b solid 2px;
   gap: 10px;
   padding: 2px 7px;
@@ -784,31 +802,45 @@ footer {
     translate: 0 -120vh;
   }
   .top-svg-header {
-    translate: 0 10vh;
+    translate: 0 18dvh;
   }
   main {
-    height: 280vh;
+    height: 260vh;
   }
   section.container-skills {
     translate: 0 -10vh;
   }
+  section.container-skills section.my-skills .container {
+    height: 25dvh;
+  }
+  section.container-skills section.my-skills .container article {
+    justify-content: space-evenly;
+  }
   section.my-activities {
     gap: 5dvh;
-    justify-content: center;
-    align-items: center;
   }
   section.my-activities .container {
     gap: 0;
+    height: 170dvh;
   }
   section.my-activities .container article {
-    align-items: center;
-    justify-content: center;
+    gap: 25dvh;
   }
   section.my-activities .container article .var-games {
     font-size: .8rem;
+    height: 28dvh;
+  }
+  .var-coding {
+    align-items: center;
+    justify-content: center;
+    gap: 2dvh;
+    height: 23dvh;
   }
   .arrow-svg {
-    translate: -10dvh -130vh;
+    translate: -13dvh -140vh;
+  }
+  .center-arrow {
+    translate: -8dvh -12dvh;
   }
   .bg-footer {
     height: 70vh;
@@ -818,6 +850,9 @@ footer {
   }
   .hidden-arrow {
     display: none;
+  }
+  section.my-information section.my-information-panel .box-container .content-button a {
+    height: 4.5dvh;
   }
 }
 
@@ -829,28 +864,38 @@ footer {
     background-position-y: 5vh;
   }
   .flex-svg-header {
-    translate: 0 -118vh;
+    translate: 0 -125vh;
   }
   .top-svg-header {
-    translate: 0 13vh;
+    translate: 0 22dvh;
   }
   main {
-    height: 270vh;
+    height: 220dvh;
   }
-  section.container-skills {
+  section.container-skills section.my-skills {
     translate: 0 -10vh;
+    width: 90%;
+  }
+  section.my-activities {
+    translate: 0 20dvh;
+  }
+  section.my-activities .container {
+    height: 175dvh;
   }
   section.my-activities .container article {
-    gap: 10dvh;
+    gap: 7dvh;
   }
   section.my-activities .container article .var-games {
     font-size: .8rem;
   }
   .arrow-svg {
-    translate: -35vh -135vh;
+    translate: -30vh -173vh;
+  }
+  .arrow-svg .hidden-arrow820 {
+    translate: 5dvh 1dvh;
   }
   .center-arrow {
-    translate: 0 2vh;
+    translate: 0 -8dvh;
   }
   .wev-background {
     display: none;
@@ -858,21 +903,56 @@ footer {
   .hidden-arrow {
     display: none;
   }
+  section.my-information section.my-information-panel {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .flex-svg-header {
-    translate: 0 -118dvh;
+    translate: 0 -122dvh;
   }
   .top-svg-header {
-    translate: 0 12dvh;
+    translate: 0 25dvh;
   }
-  section.my-skills {
-    max-width: 85%;
+  .arrow-svg {
+    translate: -40vh -155vh;
+  }
+  .var-games {
+    width: 35dvh;
+  }
+  .var-games h3 {
+    font-size: 2em;
+    height: fit-content;
+  }
+  .var-games p {
+    font-size: 1.6em;
+  }
+  section.container-skills section.my-skills {
+    max-width: 88%;
+    translate: 0 5vh;
+  }
+  section.container-skills section.my-skills .container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+  }
+  section.container-skills section.my-skills .container article {
+    padding: 1dvh 0;
+  }
+  section.container-skills section.my-skills .container article .lebarinbtn {
+    width: 100%;
   }
   main { 
-    height: 300dvh;
+    height: 240dvh;
   }
+  section.my-activities {
+    translate: 0 50dvh;
+  }
+  section.my-activities .container {
+    height: 155dvh;
+  }
+  
   section.my-information-panel {
     translate: 0 -7dvh;
     width: 85%;
@@ -880,7 +960,7 @@ footer {
     right: auto;
   }
   section.my-information-panel .box-container {
-    height: 25dvh;
+    height: 10dvh;
     align-items: center;
     text-align: justify;
   }
@@ -892,17 +972,105 @@ footer {
   .bg-footer {
     z-index: -1;
   }
-}
-
-@media screen and (max-width: 1060px) {
-  .arrow-svg {
-    display: none;
+  section.my-information .box-container .content-title {
+    height: 5dvh;
+    width: 60%;
+    font-size: 1em;
+  }
+  section.my-information .box-container .content-text {
+    width: 80%;
   }
 }
-
 @media screen and (max-width: 1158px) {
   .top-svg-header {
     translate: 0 24dvh;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .var-games {
+    width: 400px;
+  }
+  .arrow-svg {
+    display: none;
+  }
+  section.my-information .box-container .content-title {
+    height: 5dvh;
+    width: 80%;
+    font-size: 1em;
+  }
+  section.my-information .box-container .content-text {
+    width: 110%;
+  }
+}
+
+@media screen and (max-width: 982px) {
+  .top-svg-header {
+    translate: 0 29dvh;
+  }
+  section.container-skills section.my-skills {
+    max-width: 70%;
+    translate: 0 -4vh;
+  }
+  section.container-skills section.my-skills .container article .lebarinbtn {
+    width: 100%;
+  }
+  main {
+    height: 250dvh;
+  }
+  section.my-activities {
+    gap: 15dvh;
+  }
+  section.my-activities .container {
+    gap: 10dvh;
+    align-items: center;
+  }
+  section.my-activities .container article {
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  main {
+    height: 270dvh;
+  }
+  section.container-skills section.my-skills {
+    translate: 0 2vh;
+  }
+  section.my-activities .container article {
+    background-color: var(--ijoMuda2);
+    padding: 3dvh 0;
+    border-radius: 1dvh;
+    width: 80%;
+  }
+  .var-draw {
+    order: 1;
+    background: none;
+    border: none;
+    text-align: justify;
+    padding: 0 5dvh 0 5dvh;
+    width: 100%;
+  }
+  .var-draw h3 {
+    text-align: center;
+  }
+  .var-coding {
+    background: none;
+    border: none;
+    width: 100%;
+  }
+  .var-games {
+    background: none;
+    border: none;
+    width: 100%;
+  }
+  .var-games h3 {
+    font-size: 2.5rem;
+  }
+  .var-games p {
+    font-size: 1.5rem;
+  }
+  .var-games a {
+    font-size: 1.2rem;
   }
 }
 
@@ -967,7 +1135,7 @@ footer {
     translate: 0 29vh;
   }
   main {
-    height: 180dvh;
+    height: 260dvh;
   }
   section.container-skills {
     translate: 0 -15vh;
@@ -984,7 +1152,7 @@ footer {
   }
   section.my-activities {
     gap: 2dvh;
-    
+    translate: 0 70dvh;
   }
   section.my-activities .container {
     height: 5dvh;
@@ -999,9 +1167,6 @@ footer {
   section.my-activities .container article .img-coding {
     width: 20vh;
   }
-  section.my-activities .container article .var-coding {
-    padding-right: 2vh;
-  }
   section.my-activities .container article .img-draw {
     width: 20vh;
   }
@@ -1010,321 +1175,96 @@ footer {
   }
   section.my-activities .container article .var-games {
     font-size: .8rem;
-    padding : 0 3vh 0 0;
   }
-  section.my-information section.my-information-panel {
+  section.my-information section.my-information {
     translate: 0 -9dvh;
     gap: 0;
-    width: 55dvh;
+    width: 100%;
+  }
+  section.my-information section.my-information-panel {
+    width: 85%;
   }
   section.my-information section.my-information-panel .box-container {
     gap: 0;
     height: 15dvh;
-    width: 100%;
     flex-wrap: wrap;
   }
   section.my-information section.my-information-panel .box-container .content-title {
+    width: 20dvh;
+    gap: 0;
     height: 5dvh;
     font-size: 1rem;
   }
   section.my-information section.my-information-panel .box-container .content-title h1 {
-    max-width: 10dvh;
+    text-align: center;
+    width: 100%;
   }
   section.my-information section.my-information-panel .box-container .content-title .content-title-arrow {
-    padding: 0;
+    padding: 5px;
+  }
+  section.my-information section.my-information-panel .box-container .content-text {
+    width: 100%;
+    text-align: center;
   }
   section.my-information section.my-information-panel .box-container .content-button a {
-    width: fit-content;
-    text-align: center;
+    justify-content: center;
+    width: 15dvh;
+    height: 4dvh;
   }
   .bg-footer {
     height: 20dvh;
   }
 }
 
-@media screen and (max-width: 466px) {
-  nav {
-    padding: 5px;
-  }
-  nav a {
-    height: 8dvh;
-  }
-  nav a img {
-    width: 25dvh;
-    height: auto;
-  }
-  header {
-    max-width: 100%;
-    max-height: fit-content;
-    flex-wrap: wrap;
-  }
-  header h1 {
-    max-width: 70%;
-  }
-  .flex-svg-header {
-    translate: 0 -120vh;
-  }
-  .top-svg-header {
-    translate: 0 32vh;
-  }
-  .arrow-svg {
-    display: none;
-  }
-  .wev-background2 {
-    translate: 0 40dvh;
-  }
-  section.container-skills {
-    max-height: 60%;
-    font-size: 1.5dvh;
-  }
-  section.my-skills {
-    width: 75%;
-  }
+@media screen and (max-width: 753px) {
   main {
-    width: 100%;
+    height: 260dvh;
   }
-  section.my-activities h2 {
-    font-size: 4dvh;
+}
+
+@media screen and (max-width: 590px) {
+  .var-games a {
+    font-size: 1rem;
   }
-  section.my-activities .container {
-    max-width: 100%;
-    align-items: center;
-    gap: 5px;
+  .var-games h3 {
+    font-size: 1.8rem;
   }
-  section.my-activities .container article {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 50dvh;
+  .var-games p {
+    font-size: 1.6em;
   }
-  section.my-activities .container article .img-coding {
-    width: 70%;
-    margin: 10dvh 0 0 0;
+  section.my-skills .container article {
+    height: fit-content;
   }
-  section.my-activities .container article .var-coding {
-    width: 60%;
-    height: 80dvh;
-    padding-right: 2dvh;
-    padding: 0 0 30vh 0;
-    margin: 0 0 10dvh 0;
-    border-bottom: #101e23 solid 3px;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
+}
+
+@media screen and (max-width: 466px) {
+  main {
+    height: 280dvh;
   }
-  section.my-activities .container article .var-coding h3 {
-    font-size: 2.5dvh;
+  .var-draw {
+    height: fit-content;
   }
-  section.my-activities .container article .var-coding p {
-    padding: 2dvh;
+  .var-coding {
+    height: fit-content;
   }
-  section.my-activities .container article .img-draw {
-    order: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-draw {
-    align-items: center;
-    justify-content: center;
-  }
-  section.my-activities .container article .var-draw h3 {
-    font-size: 3dvh;
-  }
-  section.my-activities .container article .var-draw p {
-    font-size: 2.5dvh;
-  }
-  section.my-activities .container article .img-games {
-    margin: 10dvh 0 0 0;
-    width: 50%;
+  .var-coding h3 {
+    height: max-content;
+
   }
   section.my-activities .container article .var-games {
-    translate: 0;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    padding: 10px;
-    width: 70%;
+    height: fit-content;
   }
-  section.my-activities .container article .var-games h3 {
-    font-size: 3dvh;
-
-  }
-  section.my-activities .container article .var-games p {
-    font-size: 2.5dvh;
-
-  }
-  section.my-information {
-    translate: 0 3dvh;
-  }
-  section.my-information section.my-information-panel {
-    max-height: fit-content;
-    max-width: 80%;
-  }
-  section.my-information section.my-information-panel .box-container {
-    max-width: 8%;
-    flex-direction: column;
-    flex: 0;
-    gap: 2vh;
-  }
-  section.my-information section.my-information-panel .box-container .content-title {
-    height: 8vh;
-    width: 1px;
+  .var-games h3 {
+    height: fit-content;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .flex-svg-header {
-    translate: 0 -120vh;
-  }
   .top-svg-header {
-    translate: 0 33vh;
-  }
-  .arrow-svg {
-    display: none;
-  }
-  main {
-    height: 400vh;
-  }
-  section.my-skills {
-    max-width: 90%;
-    translate: 0 10vh;
-  }
-  section.my-activities {
-    translate: 0 105vh;
-  }
-  section.my-activities .container {
-    max-width: 50vh;
-  }
-  section.my-activities .container article {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  section.my-activities .container article .img-coding {
-    width: 50%;
-  }
-  section.my-activities .container article .var-coding {
-    padding-right: 0;
-    height: 23vh;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-    translate: 0;
-  }
-  section.my-activities .container article .img-draw {
-    translate: 0;
-    order: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-draw {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-games {
-    translate: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-games {
-    font-size: .7rem;
-    translate: 0;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    padding: 0;
-  }
-  section.my-information section.my-information-panel {
-    min-height: 27vh;
-    translate: 0 -19vh;
-  }
-  section.my-information section.my-information-panel .box-container {
-    flex-direction: row;
-    flex: 0;
-    gap: 2vh;
-    flex-wrap: wrap;
-    max-width: 100%;
-  }
-  section.my-information section.my-information-panel .box-container .content-title {
-    height: 8dvh;
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 393px) {
-  header h1 {
-    width: 98%;
-    font-size: 1.8rem;
+    translate: 0 35dvh;
   }
   .wev-background2 {
-    translate: 0 40vh;
-  }
-  main {
-    height: 370vh;
-  }
-  section.my-skills {
-    max-width: 90%;
-    translate: 0 10vh;  
-  }
-  section.my-activities {
-    translate: 0 120vh;
-  }
-  section.my-activities h2{
-    font-size: 2rem;
-  }
-  section.my-activities .container {
-    justify-content: center;
-    align-items: center;
-    gap: 10vh;
-    translate: 0 5vh;
-  }
-  section.my-activities .container article {
-    flex-direction: column;
-  }
-  section.my-activities .container article .img-coding,section.my-activities .container article .var-coding, section.my-activities .container article .img-draw, section.my-activities .container article .var-draw, section.my-activities .container article .img-games, section.my-activities .container article .var-games {
-    width: 50%;
-  }
-  section.my-activities .container article .var-coding {
-    border-right: none;
-    padding: 0 0 30vh 0;
-    border-bottom: #101e23 solid 3px;
-    text-align: justify;
-    align-items: center;
-    justify-content: center;
-  }
-  section.my-activities .container article .img-draw {
-    translate: 0;
-    order: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-draw {
-    translate: 1vh 0;
-  }
-  section.my-activities .container article .img-games {
-    translate: 0;
-    width: 50%;
-  }
-  section.my-activities .container article .var-games {
-    font-size: .7rem;
-    translate: 0 5vh;
-    justify-content: center;
-    align-items: center;
-    border-right: none;
-    border-bottom: #101e23 solid 3px;
-    padding: 0 0 10vh 0;
-  }
-    section.my-information section.my-information-panel {
-    max-height: fit-content;
-    translate: 0 -13vh;
-  }
-  section.my-information section.my-information-panel .box-container {
-    flex-direction: column;
-    flex: 0;
-    gap: 2vh;
-  }
-  section.my-information section.my-information-panel .box-container .content-title {
-    height: 8vh;
-    width: 25vh;
+    display: none;
   }
 }
 
