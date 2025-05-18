@@ -1075,7 +1075,7 @@ footer {
     font-size: 1.2rem;
   }
 }
-/********** 820px 
+
 @media screen and (max-width: 834px) {
   nav {
     justify-content: space-around;
@@ -1124,7 +1124,7 @@ footer {
     100% {
       transform: translateY(45deg);
     }
-  } ========taro * /
+  } */
   header {
     min-height: 100vh;
     width: 100%;
@@ -1265,7 +1265,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 547px) {
   .wev-background2, .wev-background {
     display: none;
   }
@@ -1294,7 +1294,7 @@ footer {
     height: fit-content;
   }
 }
-**********/
+
 
 /* About page */
 section.about-section {
