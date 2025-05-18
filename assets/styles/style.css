@@ -930,6 +930,9 @@ footer {
   .var-games p {
     font-size: 1.6em;
   }
+  .wev-background2 {
+    translate: 0 45vh;
+  }
   section.container-skills section.my-skills {
     max-width: 88%;
     translate: 0 5vh;
@@ -1021,6 +1024,7 @@ footer {
   }
   section.my-activities {
     gap: 15dvh;
+    translate: 0 60dvh;
   }
   section.my-activities .container {
     gap: 10dvh;
@@ -1265,7 +1269,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 485px) {
+@media screen and (max-width: 491px) {
   .wev-background2, .wev-background {
     display: none;
   }
