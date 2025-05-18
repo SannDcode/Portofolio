@@ -1260,11 +1260,27 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  .top-svg-header {
-    translate: 0 35dvh;
+  main {
+    height: 310dvh;
   }
-  .wev-background2 {
-    display: none;
+  .var-draw {
+    height: fit-content;
+  }
+  .var-coding {
+    height: fit-content;
+  }
+  .var-coding h3 {
+    height: max-content;
+
+  }
+  section.my-activities {
+    translate: 0 90dvh;
+  }
+  section.my-activities .container article .var-games {
+    height: fit-content;
+  }
+  .var-games h3 {
+    height: fit-content;
   }
 }
 
