@@ -1,3 +1,5 @@
+/* CSS Native By &copy; Ihsann */
+/* Don't Change This SC and Credit !!! */
 :root {
   --abuTerang: #adafb6;
   --abuTua: #5c636b;
@@ -1266,16 +1268,16 @@ footer {
 
 @media screen and (max-width: 491px) {
   .wev-background2 {
-    translate: 0 80vh;
+    display: none;
   }
   .flex-svg-header {
     translate: 0 -122dvh;
   }
   .top-svg-header {
-    translate: 0 35dvh;
+    translate: 0 40dvh;
   }
   main {
-    height: 370dvh;
+    height: 390dvh;
   }
   .var-draw {
     height: fit-content;
@@ -1287,7 +1289,7 @@ footer {
     height: max-content;
   }
   section.my-activities {
-    translate: 0 120dvh;
+    translate: 0 150dvh;
   }
   section.my-activities .container article .var-games {
     height: fit-content;
