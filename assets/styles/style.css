@@ -1267,7 +1267,7 @@ footer {
 }
 
 @media screen and (max-width: 491px) {
-  .wev-background2 {
+  .wev-background2, .wev-background {
     display: none;
   }
   .flex-svg-header {
@@ -1277,7 +1277,7 @@ footer {
     translate: 0 40dvh;
   }
   main {
-    height: 390dvh;
+    height: 400dvh;
   }
   .var-draw {
     height: fit-content;
@@ -1286,7 +1286,7 @@ footer {
     height: fit-content;
   }
   .var-coding h3 {
-    height: max-content;
+    height: fit-content;
   }
   section.my-activities {
     translate: 0 150dvh;
