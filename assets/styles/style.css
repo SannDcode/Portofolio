@@ -1236,8 +1236,13 @@ footer {
     height: fit-content;
   }
 }
-
-/* @media screen and (max-width: 466px) {
+@media screen and (max-width: 550px) {
+  main {
+    height: 300dvh;
+  }
+  
+}
+@media screen and (max-width: 466px) {
   main {
     height: 280dvh;
   }
@@ -1257,9 +1262,12 @@ footer {
   .var-games h3 {
     height: fit-content;
   }
-} */
+}
 
 @media screen and (max-width: 491px) {
+  .wev-background2 {
+    translate: 0 80vh;
+  }
   .flex-svg-header {
     translate: 0 -122dvh;
   }
@@ -1267,7 +1275,7 @@ footer {
     translate: 0 35dvh;
   }
   main {
-    height: 310dvh;
+    height: 340dvh;
   }
   .var-draw {
     height: fit-content;
@@ -1279,7 +1287,7 @@ footer {
     height: max-content;
   }
   section.my-activities {
-    translate: 0 90dvh;
+    translate: 0 120dvh;
   }
   section.my-activities .container article .var-games {
     height: fit-content;
