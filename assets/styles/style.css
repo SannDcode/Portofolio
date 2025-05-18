@@ -1237,7 +1237,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 466px) {
+/* @media screen and (max-width: 466px) {
   main {
     height: 280dvh;
   }
@@ -1257,9 +1257,15 @@ footer {
   .var-games h3 {
     height: fit-content;
   }
-}
+} */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
+  .flex-svg-header {
+    translate: 0 -122dvh;
+  }
+  .top-svg-header {
+    translate: 0 35dvh;
+  }
   main {
     height: 310dvh;
   }
