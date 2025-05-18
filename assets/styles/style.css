@@ -1075,7 +1075,7 @@ footer {
     font-size: 1.2rem;
   }
 }
-
+/********** 820px 
 @media screen and (max-width: 834px) {
   nav {
     justify-content: space-around;
@@ -1124,7 +1124,7 @@ footer {
     100% {
       transform: translateY(45deg);
     }
-  } */
+  } ========taro * /
   header {
     min-height: 100vh;
     width: 100%;
@@ -1256,7 +1256,6 @@ footer {
   }
   .var-coding h3 {
     height: max-content;
-
   }
   section.my-activities .container article .var-games {
     height: fit-content;
@@ -1288,9 +1287,6 @@ footer {
   .var-coding h3 {
     height: fit-content;
   }
-  section.my-activities {
-    height: 190dvh;
-  }
   section.my-activities .container article .var-games {
     height: fit-content;
   }
@@ -1298,7 +1294,7 @@ footer {
     height: fit-content;
   }
 }
-
+**********/
 
 /* About page */
 section.about-section {
