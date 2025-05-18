@@ -1250,9 +1250,8 @@ footer {
 }
 @media screen and (max-width: 550px) {
   main {
-    height: 300dvh;
+    height: 330dvh;
   }
-  
 }
 @media screen and (max-width: 466px) {
   main {
