@@ -1259,7 +1259,7 @@ footer {
   }
 } */
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 491px) {
   .flex-svg-header {
     translate: 0 -122dvh;
   }
@@ -1277,7 +1277,6 @@ footer {
   }
   .var-coding h3 {
     height: max-content;
-
   }
   section.my-activities {
     translate: 0 90dvh;
