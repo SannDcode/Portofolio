@@ -1265,7 +1265,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 76.28mm) {
+@media screen and (max-width: 485px) {
   .wev-background2, .wev-background {
     display: none;
   }
@@ -1283,6 +1283,9 @@ footer {
   }
   .var-coding h3 {
     height: fit-content;
+  }
+  section.my-activities {
+    translate: 0 150dvh;
   }
   section.my-activities .container article .var-games {
     height: fit-content;
