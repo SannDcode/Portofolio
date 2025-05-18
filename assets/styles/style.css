@@ -1037,10 +1037,13 @@ footer {
 
 @media screen and (max-width: 899px) {
   main {
-    height: 270dvh;
+    height: 320dvh;
   }
   section.container-skills section.my-skills {
     translate: 0 2vh;
+  }
+  section.my-activities {
+    translate: 0 80dvh;
   }
   section.my-activities .container article {
     background-color: var(--ijoMuda2);
@@ -1141,7 +1144,7 @@ footer {
     translate: 0 29vh;
   }
   main {
-    height: 260dvh;
+    height: 310dvh;
   }
   section.container-skills {
     translate: 0 -15vh;
@@ -1158,7 +1161,7 @@ footer {
   }
   section.my-activities {
     gap: 2dvh;
-    translate: 0 70dvh;
+    translate: 0 85dvh;
   }
   section.my-activities .container {
     height: 5dvh;
@@ -1224,7 +1227,7 @@ footer {
 
 @media screen and (max-width: 753px) {
   main {
-    height: 260dvh;
+    height: 310dvh;
   }
 }
 
@@ -1240,6 +1243,9 @@ footer {
   }
   section.my-skills .container article {
     height: fit-content;
+  }
+  section.my-activities {
+    translate: 0 100dvh;
   }
 }
 @media screen and (max-width: 550px) {
@@ -1287,6 +1293,9 @@ footer {
   }
   .var-coding h3 {
     height: fit-content;
+  }
+  main {
+    height: 320dvh;
   }
   section.my-activities {
     translate: 0 150dvh;
