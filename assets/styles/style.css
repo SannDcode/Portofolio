@@ -1584,14 +1584,72 @@ section.bg-container-contactme {
 section.container-contactme {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  height: max-content;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 5dvh;
   background-color: var(--abuTua);
-  flex-wrap: wrap;
+  border-radius: 10px;
+  gap: 5dvh;
 }
 
+section.pic-sos {
+  width: 50%;
+  height: 50dvh;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+section.pic-sos img {
+  object-position: 0 -25dvh;
+  width: 100%;
+}
+
+section.text-sos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 50%;
+  gap: 3dvh;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: max-content;
+  width: 100%;
+  gap: 1dvh;
+}
+
+.sosmed a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6dvh;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--bgButton);
+  text-decoration: none;
+  color: var(--textButton);
+  gap: 3dvh;
+  transition: all 0.3s ease-in-out;
+}
+
+.sosmed a:hover {
+  background-color: var(--bgButtonHover);
+  color: var(--textButtonHover);
+}
+
+.sosmed a:active {
+  background-color: var(--ijoMuda);
+}
+
+.sosmed i {
+  justify-content: start;
+}
 
 
 
