@@ -927,6 +927,9 @@ footer {
   section.my-information section.my-information-panel {
     width: 85%;
   }
+  section.container-contactme {
+    width: 85%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1604,6 +1607,26 @@ section.pic-sos img {
   width: 100%;
 }
 
+@media screen and (max-width: 1339px) {
+  section.pic-sos img {
+    object-position: 0 -10dvh;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  section.pic-sos img {
+    object-position: 0;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  section.pic-sos img {
+    transform: scale(1.9);
+  }
+}
+
+
+
 section.text-sos {
   display: flex;
   align-items: center;
@@ -1612,6 +1635,26 @@ section.text-sos {
   text-transform: uppercase;
   width: 50%;
   gap: 3dvh;
+}
+
+@media screen and (max-width: 663px) {
+  section.container-contactme {
+    flex-direction: column;
+  }
+  section.pic-sos {
+    height: 45dvh;
+    width: 100%;
+  }
+  section.pic-sos img {
+    transform: scale(1);
+    object-position: 0 -20dvh;
+  }
+  section.text-sos {
+    width: 100%;
+  }
+  .sosmed a {
+    max-width: 100%;
+  }
 }
 
 .sosmed {
