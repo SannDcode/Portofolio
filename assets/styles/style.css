@@ -189,7 +189,7 @@ header {
 
 .boxxx {
   width: 100%;
-  padding: 0 18dvh;
+  padding: 0 44dvh;
   height: 80px;
   background-color: #fff;
   transition: 0.3s ease-in-out;
@@ -521,23 +521,23 @@ section.my-activities .container article {
   flex: 1;
 }
 
+.var-games h3,.var-coding h3 {
+  height: max-content;
+  font-size: 2.5rem;
+
+}
+
 .var-coding {
   display: flex;
   flex-direction: column;
   left: 1150px;
   width: 400px;
-  height: 27dvh;
   border-right: #202020 solid 4px;
-  padding: 0 5dvh 0 5dvh;
+  padding: 5dvh;
   text-align: justify;
   background: linear-gradient(to right, #5c636b00, #adafb6);
   justify-content: space-around;
   gap: 1dvh;
-}
-
-.var-coding h3 {
-  height: 3dvh;
-  font-size: 2.5rem;
 }
 
 .var-coding p {
@@ -566,7 +566,7 @@ section.my-activities .container article {
   left: 1150px;
   width: 48dvh;
   border-right: hsl(0, 0%, 13%) solid 4px;
-  padding: 0 5vh 0 5dvh;
+  padding: 3dvh;
   display: flex;
   flex-direction: column;
   text-align: justify;
@@ -577,8 +577,6 @@ section.my-activities .container article {
 
 .var-games h3 {
   text-align: center;
-  font-size: 2.5rem;
-  height: 4.5dvh;
 }
 
 .var-games p {
@@ -833,9 +831,6 @@ footer {
   }
   .var-games a {
     font-size: 1rem;
-  }
-  .var-games h3,.var-coding h3 {
-    height: max-content;
   }
   .var-coding {
     align-items: center;
@@ -1126,6 +1121,9 @@ footer {
 }
 
 @media screen and (max-width: 834px) {
+  header {
+    background-position-y: 0;
+  }
   nav {
     justify-content: space-around;
   }
