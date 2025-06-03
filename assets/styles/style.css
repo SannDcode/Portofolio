@@ -1603,6 +1603,21 @@ section.pic-sos {
 section.pic-sos img {
   object-position: 0 -25dvh;
   width: 100%;
+  size: auto;
+}
+
+section.text-sos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 50%;
+  gap: 3dvh;
+}
+
+section.text-sos h1 {
+  font-size: 3dvh;
 }
 
 @media screen and (max-width: 1339px) {
@@ -1623,18 +1638,6 @@ section.pic-sos img {
   }
 }
 
-
-
-section.text-sos {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  text-transform: uppercase;
-  width: 50%;
-  gap: 3dvh;
-}
-
 @media screen and (max-width: 663px) {
   section.container-contactme {
     flex-direction: column;
@@ -1645,7 +1648,7 @@ section.text-sos {
   }
   section.pic-sos img {
     transform: scale(1);
-    object-position: 0 -20dvh;
+    object-position: 0 -10dvh;
   }
   section.text-sos {
     width: 100%;
