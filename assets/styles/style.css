@@ -791,9 +791,26 @@ footer {
 
 
 /* Responsive */
+@media screen and (max-width: 1920px) {
+  .flex-svg-header {
+    max-height: 100%;
+    translate: 0 -120dvh;
+  }
+  .top-svg-header {
+    translate: 0 8dvh;
+  }
+  section.my-information-panel .box-container .content-title h1 {
+    font-size: 1.3rem;
+    width: 80%;
+  }
+  section.my-information-panel .box-container .content-title {
+    height: 100%;
+  }
+}
+
 @media screen and (max-width: 1559px) {
   header {
-    background-position-y: -60px;
+    background-position-y: 0;
   }
   .flex-svg-header {
     translate: 0 -120vh;
@@ -925,6 +942,13 @@ footer {
   section.container-contactme {
     width: 85%;
   }
+  section.my-information-panel .box-container .content-title h1 {
+    font-size: 1.09rem;
+    width: 100%;
+  }
+  section.my-information-panel .box-container .content-text {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -932,7 +956,7 @@ footer {
     translate: 0 -122dvh;
   }
   .top-svg-header {
-    translate: 0 25dvh;
+    translate: 0 20dvh;
   }
   .arrow-svg {
     translate: -40vh -155vh;
@@ -990,6 +1014,7 @@ footer {
     height: fit-content;
     gap: 10px;
     padding: 10px;
+    font-size: 1rem;
   }
   .bg-footer {
     z-index: -1;
